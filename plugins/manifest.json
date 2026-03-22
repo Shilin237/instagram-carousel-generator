@@ -1,0 +1,12 @@
+{
+  "name": "instagram-carousel-plugins",
+  "version": "1.0.0",
+  "plugins": [
+    {
+      "id": "color-picker",
+      "name": "Brand Color Picker",
+      "description": "Pick and preview brand colors with live palette derivation",
+      "entry": "plugins/color-picker/index.js"
+    }
+  ]
+}
