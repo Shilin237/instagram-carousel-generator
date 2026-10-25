@@ -1,0 +1,64 @@
+{
+  "slides": [
+    {
+      "type": "hero",
+      "tag": "START",
+      "headline": "Build reliable habits",
+      "sub": "A small example"
+    },
+    {
+      "type": "problem",
+      "tag": "PROBLEM",
+      "headline": "Consistency is hard",
+      "points": [
+        "Start with one action."
+      ]
+    },
+    {
+      "type": "solution",
+      "tag": "SOLUTION",
+      "headline": "Make it simple",
+      "quote": "Choose a repeatable action."
+    },
+    {
+      "type": "features",
+      "tag": "BENEFITS",
+      "headline": "Small steps help",
+      "features": [
+        {
+          "icon": "1",
+          "label": "Focus",
+          "desc": "One thing at a time."
+        }
+      ]
+    },
+    {
+      "type": "details",
+      "tag": "DETAILS",
+      "headline": "A clear process",
+      "pills": [
+        "Plan",
+        "Act",
+        "Review"
+      ]
+    },
+    {
+      "type": "howto",
+      "tag": "HOW TO",
+      "headline": "Start today",
+      "steps": [
+        {
+          "n": "01",
+          "title": "Choose",
+          "desc": "Pick one action."
+        }
+      ]
+    },
+    {
+      "type": "cta",
+      "tag": "NEXT",
+      "headline": "Keep going",
+      "cta": "Save this guide"
+    }
+  ]
+}

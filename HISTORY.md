@@ -1,5 +1,14 @@
 # Project History & Changelog
 
+## Unreleased
+
+* Added the root README, reproducible local setup, CI and executable Node/browser tests.
+* Moved browser JavaScript out of inline script blocks and bundled pinned export libraries locally to match the CSP.
+* Corrected export scaling to 1080 × 1350 and verified seven PNG downloads and seven PDF pages.
+* Extracted the shared generation handler with nested output validation and a bounded fixed-window limiter.
+* Corrected security documentation: memory limits are process-local and CORS is not authentication.
+
+
 ## v1.2.0 — 2026-03-20
 ### Security (15 issues resolved)
 

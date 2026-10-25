@@ -10,3 +10,11 @@ node_modules/
 # OS
 .DS_Store
 Thumbs.db
+
+public/vendor/
+test-results/
+playwright-report/
+exports/
+dist/
+.env.*
+!.env.example
