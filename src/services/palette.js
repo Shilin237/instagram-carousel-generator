@@ -31,7 +31,9 @@ function hslToHex(h, s, l) {
 }
 
 function derivePalette(primaryHex) {
-  const [h, s, l] = hexToHsl(primaryHex);
+  if (typeof primaryHex !== 'string' || !/^#([0-9a-f]{3}|[0-9a-f]{6})$/i.test(primaryHex)) throw new TypeError('Invalid hex color');
+  const normalized = primaryHex.length === 4 ? '#' + [...primaryHex.slice(1)].map(c => c + c).join('') : primaryHex;
+  const [h, s, l] = hexToHsl(normalized);
   return {
     BRAND_PRIMARY: primaryHex,
     BRAND_LIGHT:   hslToHex(h, s, Math.min(l + 20, 95)),

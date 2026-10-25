@@ -66,7 +66,11 @@ instagram-carousel-generator/
 ├── HISTORY.md         ← changelog and version history
 ├── WORKFLOW.md        ← how to use this tool end-to-end
 ├── SECURITY.md        ← security and privacy guidelines
-├── index.html         ← main carousel generator UI
+├── public/index.html  ← deployed carousel generator UI
+├── public/app.js      ← browser rendering and export logic
+├── api/generate.js    ← server provider adapter
+├── src/server/        ← validated shared API handler
+├── index.html         ← legacy standalone UI
 ├── generator.html     ← standalone carousel output template
 └── assets/
     └── fonts.css      ← Google Fonts imports
@@ -77,3 +81,7 @@ instagram-carousel-generator/
 - Never overlap body text with progress bar (clear bottom padding)
 - Last slide: no swipe arrow, progress bar at 100%, clear CTA
 - Every component must work on both light and dark backgrounds
+
+## Repository validation
+
+Use Node.js 22+, npm ci, npm run build and npm run dev. Run npm test and npm run test:e2e (after installing Chromium). CI exercises the public/ UI with mocked provider content and actual PNG/PDF downloads. See README.md for current deployment and SECURITY.md for rate-limit boundaries.
